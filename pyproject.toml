@@ -1,0 +1,20 @@
+[project]
+name = "color-detection"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Siarhei Paulavets",email = "s.paulavets@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "opencv-python (>=5.0.0.93,<6.0.0.0)",
+    "pandas (>=3.0.6,<4.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "color_detection", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
